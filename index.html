@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrs Fashion - Premium Fashion Store in Sri Lanka</title>
+    <link rel="icon" type="image/png" href="web photo/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+    <video class="background1" autoplay muted loop playsinline disablePictureInPicture aria-hidden="true">
+        <source src="web photo/background1.mp4" type="video/mp4">
+    </video>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" role="status" aria-label="Loading Mrs Fashion">
+
+        <video class="ls-bg-video" autoplay muted loop playsinline preload="auto"
+               disablePictureInPicture aria-hidden="true">
+            <source src="web photo/Pink_and_white_fabric_billowing_20260919175355.mp4" type="video/mp4">
+        </video>
+        <div class="ls-bg-overlay"></div>
+        <div class="ls-logo-wrap">
+            <img class="ls-logo"
+                 src="web photo/Logo.gif"
+                 alt="Mrs Fashion logo"
+                 draggable="false">
+        </div>
+        <div class="ls-brand">Mrs Fashion</div>
+        <div class="ls-bar-track">
+            <div class="ls-bar-fill"></div>
+        </div>
+        <div class="ls-tagline">Premium Fashion · Sri Lanka</div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img class="logo-gif" src="web photo/Logo.gif" alt="Logo">
+                <span>Mrs Fashion</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home1"        class="nav-link">Home</a>
+                <a href="#updates"     class="nav-link">Updates</a>
+                <a href="#limited-edition"     class="nav-link">Limited Edition</a>
+                <!-- Collections Menu -->
+                <div class="nav-item-dropdown nav-item-dropdown-collections">
+    <a href="#collections" class="nav-link nav-link-collections">Collection <i class="fas fa-chevron-down nav-caret"></i></a>
+    <div class="nav-dropdown-menu nav-mega-menu nav-collections-menu">
+        <div class="nav-mega-banners">
+            <a href="#collections" class="nav-mega-banner">
+                <img src="web photo/new-collection-category.png" alt="New Collection">
+                <span>New</span>
+            </a>
+            <a href="#gift-collection" class="nav-mega-banner">
+                <img src="web photo/gift-collection-category.png" alt="Gift Collection">
+                <span>Gift</span>
+            </a>
+            <a href="#footwear-collection" class="nav-mega-banner">
+                <img src="web photo/footwear-collection-banner1.png" alt="Footwear Collection">
+                <span>Footwear</span>
+            </a>
+            <a href="#wedding-collection" class="nav-mega-banner">
+                <img src="web photo/wedding-collection-banner3.png" alt="Wedding Collection">
+                <span>Wedding</span>
+            </a>
+            <a href="#bag-collection" class="nav-mega-banner">
+                <img src="web photo/bag-collection-banner1.png" alt="Bag Collection">
+                <span>Bags</span>
+            </a>
+            <a href="#watches-collection" id="navWatchesLink" class="nav-mega-banner">
+                <img src="web photo/watches-collection-banner1.png" alt="Watch Collection">
+                <span>Watches</span>
+            </a>
+        </div>
+    </div>
+</div>
+                <!-- Shop Menu -->
+                <div class="nav-item-dropdown nav-item-dropdown-shop">
+    <a href="#shop-categories" class="nav-link nav-link-shop">Shop <i class="fas fa-chevron-down nav-caret"></i></a>
+    <div class="nav-dropdown-menu nav-mega-menu">
+        <div class="nav-mega-links">
+            <a href="#" class="nav-mega-link" data-shop-category="women">Women</a>
+            <a href="#" class="nav-mega-link" data-shop-category="men">Men</a>
+            <a href="#" class="nav-mega-link" data-shop-category="kids">Kids</a>
+            <a href="#" class="nav-mega-link" data-shop-category="office">Office</a>
+            <a href="#" class="nav-mega-link" data-shop-category="school">School</a>
+            <a href="#" class="nav-mega-link" data-shop-category="homeLifestyle">Home &amp; Lifestyle</a>
+            <a href="#" class="nav-mega-link" data-shop-category="toysGames">Toys &amp; Games</a>
+        </div>
+        <div class="nav-mega-banners">
+            <a href="#" class="nav-mega-banner" data-shop-category="women">
+                <img src="web photo/womens-category.png" alt="Women">
+                <span>Women</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="men">
+                <img src="web photo/mens-category.png" alt="Men">
+                <span>Men</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="kids">
+                <img src="web photo/kids-category.png" alt="Kids">
+                <span>Kids</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="office">
+                <img src="web photo/office-category.png" alt="Office">
+                <span>Office</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="school">
+                <img src="web photo/school-category.png" alt="School">
+                <span>School</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="homeLifestyle">
+                <img src="web photo/homelifestyle-category.png" alt="Home & Lifestyle">
+                <span>Home &amp; Lifestyle</span>
+            </a>
+            <a href="#" class="nav-mega-banner" data-shop-category="toysGames">
+                <img src="web photo/toysgames-category.png" alt="Toys & Games">
+                <span>Toys &amp; Games</span>
+            </a>
+        </div>
+    </div>
+</div>
+                <a href="#aboutVideo"       class="nav-link">About</a>
+                <a href="#contact"     class="nav-link">Contact</a>
+                <a href="#Spin"        class="spin-now"><i class="fas fa-gift"></i> Spin Now</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon credit-icon" id="creditNavBtn" aria-label="Store Credit"><i class="fas fa-hand-holding-dollar"></i></a>
+                <a href="#" class="nav-icon search-icon" title="Search"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon cart-icon"   title="Cart"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+                <a href="#" class="nav-icon user-icon"   title="Login"><i class="fas fa-user"></i></a>
+                <!-- E-Wallet -->
+                <div class="wallet-wrap">
+                    <a href="#" class="nav-icon wallet-icon" id="walletIconBtn" title="E-Wallet"><i class="fas fa-wallet"></i></a>
+                    <div class="wallet-panel" id="walletPanel">
+                        <div class="wallet-panel-arrow"></div>
+
+                        <div class="wallet-view wallet-view-main" id="walletViewMain">
+                            <div class="wallet-panel-header">
+                                <span><i class="fas fa-wallet"></i> My E-Wallet</span>
+                                <button type="button" class="wallet-close" id="walletCloseBtn" aria-label="Close e-wallet"><i class="fas fa-times"></i></button>
+                            </div>
+                            <div class="wallet-balance-card">
+                                <span class="wallet-balance-label">Available balance</span>
+                                <span class="wallet-balance-amount">LKR <span id="walletBalanceValue">1,000.00</span></span>
+                            </div>
+                            <button type="button" class="wallet-deposit-btn" id="walletDepositBtn">
+                                <i class="fas fa-plus"></i> Deposit
+                            </button>
+                            <div class="wallet-panel-footnote">Top up instantly using a debit or credit card.</div>
+                        </div>
+
+                        <div class="wallet-view wallet-view-deposit" id="walletViewDeposit">
+                            <div class="wallet-panel-header">
+                                <button type="button" class="wallet-back" id="walletBackBtn" aria-label="Back to wallet"><i class="fas fa-arrow-left"></i></button>
+                                <span>Deposit funds</span>
+                                <button type="button" class="wallet-close" id="walletCloseBtn2" aria-label="Close e-wallet"><i class="fas fa-times"></i></button>
+                            </div>
+                            <form id="walletDepositForm">
+                                <div class="checkout-row">
+                                    <input class="checkout-field wallet-field" type="text" id="walletAmount" placeholder="Amount to deposit (LKR)" inputmode="numeric" required>
+                                </div>
+                                <div class="wallet-panel-subtitle">Card details</div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field wallet-field" type="text" id="walletCardName" placeholder="Name on card" autocomplete="cc-name" required>
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field wallet-field" type="text" id="walletCardNumber" placeholder="Card number" inputmode="numeric" maxlength="19" autocomplete="cc-number" required>
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field wallet-field" type="text" id="walletCardExpiry" placeholder="MM / YY" inputmode="numeric" maxlength="7" autocomplete="cc-exp" required>
+                                    <input class="checkout-field wallet-field" type="text" id="walletCardCvv" placeholder="CVV" inputmode="numeric" maxlength="4" autocomplete="cc-csc" required>
+                                </div>
+                                <button type="submit" class="wallet-pay-btn" id="walletPayBtn">Pay</button>
+                            </form>
+                        </div>
+
+                        <div class="wallet-view wallet-view-success" id="walletViewSuccess">
+                            <div class="wallet-success-icon"><i class="fas fa-check"></i></div>
+                            <div class="wallet-success-title">Deposit successful</div>
+                            <div class="wallet-success-text" id="walletSuccessText"></div>
+                            <button type="button" class="wallet-deposit-btn" id="walletDoneBtn">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Announcement Banner -->
+    <div class="ad-banner">
+        <p>🔥 Exclusive Offer: Get 20% Off on Your First Purchase! Use Code: WELCOME20</p>
+    </div>
+    <div class="invisible-btn" id="home1">
+        <button></button>
+    </div>
+
+    <!-- Spin to Win -->
+    <div class="spin-modal-overlay" id="spinModal">
+    <div class="spin-modal">
+    <button class="spin-modal-close" id="spinModalClose">×</button>
+    <div class="spin-modal-left">
+      <div class="wheel-wrap">
+        <canvas id="spinWheelCanvas" width="240" height="240"></canvas>
+        <div class="wheel-pointer"></div>
+        <button class="wheel-center-btn" id="wheelCenterBtn">SPIN</button>
+      </div>
+    </div>
+    <div class="spin-modal-right">
+      <div id="spinFormSection">
+        <h2 class="spin-modal-title">SPIN TO WIN</h2>
+        <p class="spin-modal-subtitle">Enter your email for a chance to win up to 30% off your online order.</p>
+        <input class="spin-modal-input" type="text" placeholder="First name" id="spinName">
+        <input class="spin-modal-input" type="email" placeholder="Email address" id="spinEmail">
+        <button class="spin-modal-btn" id="spinTryBtn">Try your luck</button>
+        <div class="spin-modal-skip" id="spinSkip">Not feeling lucky today</div>
+        <p class="spin-modal-note">Discount codes are valid only for online purchases at Mrs Fashion. By signing up, you agree to receive email updates and offers.</p>
+      </div>
+      <div class="spin-modal-result" id="spinResultSection">
+        <h3>🎉 You won!</h3>
+        <p class="spin-won-label" id="spinWonLabel"></p>
+        <div class="spin-code" id="spinCodeDisplay">SPIN20</div>
+        <p>Use this code at checkout to claim your discount.<br>Happy shopping!</p>
+        <button class="spin-modal-btn" style="margin-top:12px;" id="spinDoneBtn">Start Shopping</button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-overlay" id="searchBar">
+        <div class="search-panel" role="dialog" aria-modal="true" aria-label="Search products">
+            <div class="search-panel-header">
+                <i class="fas fa-search search-panel-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search for bags, shoes, gifts…" autocomplete="off">
+                <button class="search-close" aria-label="Close search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <center>
+                <div class="hero-eyebrow">Premium Fashion · Sri Lanka</div>
+                <h1 class="hero-title brand-reveal" aria-label="Mrs Fashion">
+                    <span class="brand-line">
+                        <span class="brand-letter">M</span>
+                        <span class="brand-letter">R</span>
+                        <span class="brand-letter">S</span>
+                        <span class="brand-letter brand-space">&nbsp;</span>
+                        <span class="brand-letter">F</span>
+                        <span class="brand-letter">A</span>
+                        <span class="brand-letter">S</span>
+                        <span class="brand-letter">H</span>
+                        <span class="brand-letter">I</span>
+                        <span class="brand-letter">O</span>
+                        <span class="brand-letter">N</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">Elevate Your Fashion Game with Mrs Fashion Sri Lanka</p>
+                <a href="#collections" class="nav-link2">
+                    <button class="btn btn-primary btn-lg">
+                        <span>Shop Now</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </a>
+            </center>
+        </div>
+        <div class="scroll-cue">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="#collections" class="nav-link3">
+        <button class="btn1 btn-primary1 btn-lg1">
+        </button>
+    </a>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Live Counter -->
+    <div class="live-counter" >
+        <div class="counter-item">
+            <i class="fas fa-user"></i>
+            <div class="counter-text">
+                <span class="counter-label">Logged In</span>
+                <span class="counter-number" id="loggedInCount">240</span>
+            </div>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+            <i class="fas fa-globe"></i>
+            <div class="counter-text">
+                <span class="counter-label">Online Now</span>
+                <span class="counter-number" id="onlineCount">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner">
+    <div class="ad-banner-card" id="adBannerCard">
+        <button class="ad-banner-dismiss" id="adBannerDismiss" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia">
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 1.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 2.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Wedding Collection -->
+    <section class="wedding-promo" id="wedding-collection">
+        <div class="wedding-promo-inner">
+            <video class="wedding-promo-image" autoplay muted loop playsinline disablePictureInPicture aria-label="Wedding collection table setting">
+            <source src="web photo/wedding-collection-video.mp4" type="video/mp4">
+            </video>
+            <div class="wedding-promo-content">
+                <span class="wedding-promo-eyebrow">Curated For Your Big Day</span>
+                <h2>The Wedding Collection</h2>
+                <p>Everything for your wedding, arranged in one place </p>
+                <button class="wedding-promo-btn" id="exploreWeddingBtn" type="button">
+                    <span>Explore Wedding Collection</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Collection Modal -->
+    <div class="wedding-modal-overlay" id="weddingModal">
+        <div class="wedding-modal">
+            <button class="wedding-modal-close" id="weddingModalClose" aria-label="Close">&times;</button>
+
+            <div class="wedding-modal-view wedding-view-image" id="weddingViewImage">
+
+                <div class="wedding-image-wrap">
+                    <img src="web photo/wedding-collection-banner2.png" alt="Wedding collection table setting" id="weddingBannerImg">
+
+                    <button type="button" class="wedding-hotspot" data-category="studio" style="left:12%; top:48%;" aria-label="Studio Photography">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-camera"></i></span>
+                        <span class="wedding-hotspot-label">Studio Photography</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="design" style="left:29%; top:27%;" aria-label="Wedding Design">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-spa"></i></span>
+                        <span class="wedding-hotspot-label">Wedding Design</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="salon" style="left:51%; top:49%;" aria-label="Salon Services">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-magic"></i></span>
+                        <span class="wedding-hotspot-label">Salon Services</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="car" style="left:33%; top:63%;" aria-label="Wedding Car Rental">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-car"></i></span>
+                        <span class="wedding-hotspot-label">Wedding Car Rental</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="hotel" style="left:87%; top:37%;" aria-label="Hotel Booking">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-hotel"></i></span>
+                        <span class="wedding-hotspot-label">Hotel Booking</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="jewelry" style="left:64%; top:76%;" aria-label="Jewelry">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-gem"></i></span>
+                        <span class="wedding-hotspot-label">Jewelry</span>
+                    </button>
+
+                    <button type="button" class="wedding-hotspot" data-category="clothing" style="left:55%; top:14%;" aria-label="Wedding Attire">
+                        <span class="wedding-hotspot-dot"><i class="fas fa-tshirt"></i></span>
+                        <span class="wedding-hotspot-label">Wedding Attire</span>
+                    </button>
+
+                    <button type="button" class="wedding-vip-btn" id="weddingVipBtn" aria-label="VIP">
+                        <i class="fas fa-crown"></i><span>VIP</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="wedding-modal-view wedding-view-packages" id="weddingViewPackages">
+                <button type="button" class="wedding-back-btn" id="weddingBackBtn">
+                    <i class="fas fa-arrow-left"></i> Back to collection
+                </button>
+                <div class="wedding-packages-header">
+                    <i class="fas" id="weddingPackagesIcon"></i>
+                    <div>
+                        <h2 id="weddingPackagesTitle"></h2>
+                        <p id="weddingPackagesSub"></p>
+                    </div>
+                </div>
+                <div class="wedding-hotel-grid" id="weddingStudioGrid" style="display:none;"></div>
+                <div class="wedding-hotel-grid" id="weddingDesignGrid" style="display:none;"></div>
+                <div class="wedding-hotel-grid" id="weddingSalonGrid" style="display:none;"></div>
+                <div class="wedding-hotel-grid" id="weddingCarGrid" style="display:none;"></div>
+                <div class="wedding-hotel-grid" id="weddingHotelGrid" style="display:none;"></div>
+                <div class="wedding-packages-grid" id="weddingPackagesGrid"></div>
+                <div class="wedding-jewelry-grid" id="weddingJewelryGrid" style="display:none;"></div>
+                <div class="wedding-clothing-grid" id="weddingClothingGrid" style="display:none;"></div>
+            </div>
+
+            <div class="wedding-modal-view wedding-view-vip" id="weddingViewVip" aria-label="VIP">
+                <video class="wvip-video" autoplay muted loop playsinline disablePictureInPicture aria-hidden="true">
+                    <source src="web photo/wedding-vip-background.mp4" type="video/mp4">
+                </video>
+
+                <div class="wvip-glass">
+                    <button type="button" class="wvip-back" id="wvipBack"><i class="fas fa-arrow-left"></i> Back to collection</button>
+
+                    <div class="wvip-header">
+                        <i class="fas fa-crown"></i>
+                        <div>
+                            <h2>VIP Wedding Request</h2>
+                            <p>Tell us what you're looking for</p>
+                        </div>
+                    </div>
+
+                    <form id="wvipForm" novalidate>
+                        <div class="wvip-field">
+                            <label for="wvipCategory">Category</label>
+                            <select id="wvipCategory" required>
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="hotel">Hotels</option>
+                                <option value="car">Vehicles</option>
+                                <option value="salon">Salons</option>
+                                <option value="jewelry">Jewelry</option>
+                                <option value="design">Wedding Designs</option>
+                                <option value="studio">Studios</option>
+                            </select>
+                        </div>
+
+                        <div class="wvip-field" id="wvipSubWrap" hidden>
+                            <label for="wvipSub">Clothing for</label>
+                            <select id="wvipSub">
+                                <option value="" disabled selected>Select men, women or kids</option>
+                                <option value="men">Men</option>
+                                <option value="women">Women</option>
+                                <option value="kids">Kids</option>
+                            </select>
+                        </div>
+
+                        <div id="wvipDetails" hidden>
+                            <div class="wvip-field">
+                                <label for="wvipName" id="wvipNameLabel">Name</label>
+                                <input type="text" id="wvipName" list="wvipNameList" autocomplete="off" placeholder="Search or type a name">
+                                <datalist id="wvipNameList"></datalist>
+                            </div>
+
+                            <div class="wvip-field" id="wvipColorWrap" hidden>
+                                <label>Color</label>
+                                <div class="wvip-colors" id="wvipColors"></div>
+                            </div>
+
+                            <div class="wvip-field" id="wvipSizeWrap" hidden>
+                                <label for="wvipSize" id="wvipSizeLabel">Size</label>
+                                <select id="wvipSize"></select>
+                            </div>
+
+                            <div class="wvip-field">
+                                <label>Price range (LKR)</label>
+                                <div class="wvip-price-row">
+                                    <input type="text" id="wvipMin" inputmode="numeric" placeholder="Min">
+                                    <span>–</span>
+                                    <input type="text" id="wvipMax" inputmode="numeric" placeholder="Max">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="wvip-submit">Submit Request</button>
+                            <p class="wvip-status" id="wvipStatus" role="status"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="wedding-modal-view wedding-view-clothing-categories" id="weddingViewClothingCategories">
+                <button type="button" class="wedding-back-btn" id="weddingClothingCategoriesBackBtn">
+                    <i class="fas fa-arrow-left"></i> Back to collection
+                </button>
+                <div class="wedding-clothing-categories-header">
+                    <i class="fas fa-tshirt"></i>
+                    <div>
+                        <h2>Wedding Attire</h2>
+                        <p>Choose a category to browse wedding outfits</p>
+                    </div>
+                </div>
+                <div class="wedding-clothing-categories-grid">
+                    <button type="button" class="wedding-clothing-category-tile" data-clothing-category="men" aria-label="Men's Wedding Collection">
+                        <img src="web photo/wedding-clothing/mens-wedding-category.png" alt="Men's Wedding Collection"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wedding-clothing-category-fallback" style="display:none;"><i class="fas fa-user-tie"></i></div>
+                        <span class="wedding-clothing-category-label">Men</span>
+                    </button>
+                    <button type="button" class="wedding-clothing-category-tile" data-clothing-category="women" aria-label="Women's Wedding Collection">
+                        <img src="web photo/wedding-clothing/womens-wedding-category.png" alt="Women's Wedding Collection"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wedding-clothing-category-fallback" style="display:none;"><i class="fas fa-person-dress"></i></div>
+                        <span class="wedding-clothing-category-label">Women</span>
+                    </button>
+                    <button type="button" class="wedding-clothing-category-tile" data-clothing-category="kids" aria-label="Kids' Wedding Collection">
+                        <img src="web photo/wedding-clothing/kids-wedding-category.png" alt="Kids' Wedding Collection"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="wedding-clothing-category-fallback" style="display:none;"><i class="fas fa-child"></i></div>
+                        <span class="wedding-clothing-category-label">Kids</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Updates -->
+    <section class="updates-section" id="updates">
+        <video class="updates-video-bg" autoplay muted loop playsinline preload="metadata" disablePictureInPicture aria-hidden="true">
+            <source src="web photo/updates-background.mp4" type="video/mp4">
+        </video>
+        <div class="updates-video-overlay"></div>
+
+        <div class="updates-header">
+            <span class="updates-eyebrow">On The Design Table</span>
+            <h2>Upcoming Updates</h2>
+            <p>A first look at what we're stitching together next</p>
+        </div>
+
+        <div class="updates-glass">
+            <div class="updates-viewport" id="updatesViewport">
+                <div class="updates-track" id="updatesTrack">
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-1.png" alt="Preview of dark and light theme toggle"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-moon"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Dark Mode &amp; Light Mode</h3>
+                            <p>Switch between a bright, airy palette and an easy-on-the-eyes dark theme, whenever you like.</p>
+                        </div>
+                    </article>
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-2.png" alt="Price filter preview"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-tags"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Price Filter</h3>
+                            <p>Narrow down your search results by budget, so you only see what fits.</p>
+                        </div>
+                    </article>
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-3.png" alt="Save your card preview"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-credit-card"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Save Your Card</h3>
+                            <p>Save a card for faster online checkouts by adding it to your browser or digital wallet.</p>
+                        </div>
+                    </article>
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-4.png" alt="Wishlist preview"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-heart"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Wishlist &amp; Favourites</h3>
+                            <p>Heart the pieces you love and come back to them later, across all your devices.</p>
+                        </div>
+                    </article>
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-5.png" alt="Order tracking preview"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-truck-fast"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Live Order Tracking</h3>
+                            <p>Follow your parcel from our studio to your doorstep with real-time delivery updates.</p>
+                        </div>
+                    </article>
+
+                    <article class="update-card">
+                        <span class="update-tag">Coming Soon</span>
+                        <div class="update-card-media">
+                            <img src="web photo/update-6.png" alt="Rewards preview"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="update-media-fallback" style="display:none;"><i class="fas fa-gem"></i></div>
+                        </div>
+                        <div class="update-card-body">
+                            <h3>Mrs Fashion Rewards</h3>
+                            <p>Earn points on every order and redeem them for discounts, gifts and early access to drops.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fashion Banner -->
+    <div class="fashion-img-wrap">
+        <img class="fashion-img" src="web photo\edited_new_1.png"alt="fashion-img">
+        <a href="#shop-categories" class="fashion-img-shop-btn" aria-label="Shop Now"></a>
+    </div>
+    <br>
+    <br>
+
+    <!-- Social Buttons -->
+    <div class="social-buttons">
+        <a class="Ai" id="aiAgentBtn" role="button" tabindex="0" aria-label="Open MRS Fashion AI agent">
+        <img src="icon pack\Ai.png" alt="Ai">
+        </a>
+        <a class="whatsapp" href="https://web.whatsapp.com" aria-label="WhatsApp">
+            <img src="icon pack\whatsapp.png" alt="WhatsApp">
+        </a>
+        <a class="youtube" href="https://www.youtube.com" aria-label="YouTube">
+            <img src="icon pack\youtube.png" alt="YouTube">
+        </a>
+        <a class="facebook" href="https://www.facebook.com" aria-label="Facebook">
+            <img src="icon pack\facebook.png" alt="Facebook">
+        </a>
+        <a class="instagram" href="https://www.instagram.com" aria-label="instagram">
+            <img src="icon pack\instagram.png" alt="instagram">
+        </a>
+        <a class="tiktok" href="https://www.tiktok.com" aria-label="tiktok">
+            <img src="icon pack\tiktok.png" alt="tiktok">
+        </a>
+    </div>
+
+     <!-- Limited Edition -->
+     <section class="limited-edition" id="limited-edition" aria-label="Limited Edition">
+    <video class="le-video-bg" autoplay muted loop playsinline preload="metadata" disablePictureInPicture aria-hidden="true">
+        <source src="web photo/new-collection-background.mp4" type="video/mp4">
+    </video>
+    <div class="le-video-shade"></div>
+
+    <div class="le-inner">
+        <div class="section-header">
+            <h2>Limited Edition</h2>
+            <p>Anime back-print tees &mdash; unisex, made for everyone</p>
+        </div>
+
+        <div class="le-topbar">
+            <button type="button" class="le-see-more" id="leSeeMore">
+                See More <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="le-carousel" id="leCarousel">
+            <button type="button" class="le-arrow le-arrow-prev" id="lePrev" aria-label="Previous items">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="le-viewport">
+                <div class="le-track" id="leTrack"></div>
+            </div>
+            <button type="button" class="le-arrow le-arrow-next" id="leNext" aria-label="Next items">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner-2">
+    <div class="ad-banner-card" id="adBannerCard2">
+        <button class="ad-banner-dismiss" id="adBannerDismiss2" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia2">
+
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 3.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 4.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 2.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- New Collections -->
+    <section class="collections" id="collections">
+    <video class="collections-video-bg" autoplay muted loop playsinline preload="metadata" disablePictureInPicture aria-hidden="true">
+        <source src="web photo/new-collection-background.mp4" type="video/mp4">
+    </video>
+    <div class="collections-inner">
+        <div class="section-header">
+            <h2>New Collections</h2>
+            <p>Curated designs exclusively for you</p>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+        <div class="pagination" id="pagination"></div>
+    </div>
+</section>
+
+     <img class="background2" src="web photo/background2.png" alt="Background">
+    <!-- Shop Categories -->
+    <section class="category-banners" id="shop-categories">
+        <div class="category-grid">
+            <a href="#Men's Collection" class="category-tile category-mens">
+                <img src="web photo/mens-category.png" alt="Men's Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#Women's Collection" class="category-tile category-womens">
+                <img src="web photo/womens-category.png" alt="Women's Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#Kid's Collection" class="category-tile category-kids">
+                <img src="web photo/kids-category.png" alt="Kid's Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#Office Collection" class="category-tile category-office">
+                <img src="web photo/office-category.png" alt="Office Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#School Collection" class="category-tile category-school">
+                <img src="web photo/school-category.png" alt="School Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#Home & Lifestyle Collection" class="category-tile category-homelifestyle">
+                <img src="web photo/homelifestyle-category.png" alt="Home & Lifestyle Collection">
+                <div class="category-label"></div>
+            </a>
+            <a href="#Toys & Games Collection" class="category-tile category-toysgames">
+                <img src="web photo/toysgames-category.png" alt="Toys & Games Collection">
+                <div class="category-label"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Watch Collection -->
+    <section class="watch-promo" id="watches-collection">
+    <div class="watch-promo-inner">
+        <img class="watch-promo-image" src="web photo/watches-collection-banner3.png" alt="Watch collection">
+        <div class="watch-promo-content">
+            <span class="watch-promo-eyebrow">Time It Right</span>
+            <h2 style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">The Watch Collection</h2>
+            <p>Timepieces for every wrist, from everyday classics to statement pieces</p>
+            <button class="watch-promo-btn" id="exploreWatchBtn" type="button">
+                <span>Explore Watch Collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+
+<!-- Gift Collection -->
+<section class="gift-collection" id="gift-collection">
+    <video class="gift-video-bg" autoplay muted loop playsinline preload="metadata" disablePictureInPicture aria-hidden="true">
+        <source src="web photo/new-collection-background.mp4" type="video/mp4">
+    </video>
+    <div class="gift-collection-inner">
+        <div class="section-header">
+            <h2>Gift Collection</h2>
+            <p>Thoughtful picks for every occasion</p>
+        </div>
+        <div class="products-grid" id="giftProductsGrid"></div>
+        <div class="gift-see-more-wrap">
+            <button class="gift-see-more-btn" id="giftSeeMoreBtn" type="button">
+                <span>See More</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner-3">
+    <div class="ad-banner-card" id="adBannerCard3">
+        <button class="ad-banner-dismiss" id="adBannerDismiss3" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia3">
+
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 5.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 6.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 1.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footwear Collection -->
+    <section class="footwear-promo" id="footwear-collection">
+    <div class="footwear-promo-inner">
+        <img class="footwear-promo-image" src="web photo/footwear-collection-banner.png" alt="Footwear collection">
+        <div class="footwear-promo-content">
+            <span class="footwear-promo-eyebrow">Step Into Style</span>
+            <h2 style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">The Footwear Collection</h2>
+            <p>Shoes for every step of your journey</p>
+            <button class="footwear-promo-btn" id="exploreFootwearBtn" type="button">
+                <span>Explore Footwear Collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+
+<!-- Footwear Collection Modal -->
+<div class="footwear-modal-overlay" id="footwearModal">
+    <div class="footwear-modal">
+        <button class="footwear-modal-close" id="footwearModalClose" aria-label="Close">&times;</button>
+
+        <div class="footwear-modal-view footwear-view-categories show" id="footwearViewCategories">
+            <div class="footwear-categories-header">
+                <i class="fas fa-shoe-prints"></i>
+                <div>
+                    <h2>Footwear Collection</h2>
+                    <p>Choose a category to browse</p>
+                </div>
+            </div>
+            <div class="footwear-categories-grid">
+                <button type="button" class="footwear-category-tile" data-footwear-category="men" aria-label="Men's Footwear">
+                    <img src="web photo/footwear/mens-footwear-category.png" alt="Men's Footwear"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="footwear-category-fallback" style="display:none;"><i class="fas fa-shoe-prints"></i></div>
+                    <span class="footwear-category-label">Men</span>
+                </button>
+                <button type="button" class="footwear-category-tile" data-footwear-category="women" aria-label="Women's Footwear">
+                    <img src="web photo/footwear/womens-footwear-category.png" alt="Women's Footwear"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="footwear-category-fallback" style="display:none;"><i class="fas fa-shoe-prints"></i></div>
+                    <span class="footwear-category-label">Women</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="footwear-modal-view footwear-view-items" id="footwearViewItems">
+            <button type="button" class="footwear-back-btn" id="footwearBackBtn">
+                <i class="fas fa-arrow-left"></i> Back to categories
+            </button>
+            <div class="footwear-items-header">
+                <i class="fas" id="footwearItemsIcon"></i>
+                <div>
+                    <h2 id="footwearItemsTitle"></h2>
+                    <p id="footwearItemsSub"></p>
+                </div>
+            </div>
+            <div class="footwear-items-grid" id="footwearItemsGrid"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- e-Voucher -->
+    <section class="evoucher-collection" id="evoucher">
+        <div class="section-header">
+            <h2>e-Voucher</h2>
+            <p>Give them the freedom to choose</p>
+        </div>
+        <div class="products-grid" id="evoucherGrid"></div>
+    </section>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner-4">
+    <div class="ad-banner-card" id="adBannerCard4">
+        <button class="ad-banner-dismiss" id="adBannerDismiss4" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia4">
+
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 7.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 8.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 9.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+                <span>Add a 1600×320 image here</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Bag Collection -->
+    <section class="bag-promo" id="bag-collection">
+    <div class="bag-promo-inner">
+        <img class="bag-promo-image" src="web photo/bag-collection-banner.png" alt="Bag collection">
+        <div class="bag-promo-content">
+            <span class="bag-promo-eyebrow">Carry It Well</span>
+            <h2 style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">The Bag Collection</h2>
+            <p>Bags for every occasion, curated for you</p>
+            <button class="bag-promo-btn" id="exploreBagBtn" type="button">
+                <span>Explore Bag Collection</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- Bag Collection Modal -->
+    <div class="bag-modal-overlay" id="bagModal">
+    <div class="bag-modal">
+        <button class="bag-modal-close" id="bagModalClose" aria-label="Close">&times;</button>
+
+        <div class="bag-modal-view bag-view-categories show" id="bagViewCategories">
+            <div class="bag-categories-header">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                    <h2>Bag Collection</h2>
+                    <p>Choose a category to browse</p>
+                </div>
+            </div>
+            <div class="bag-categories-grid">
+                <button type="button" class="bag-category-tile" data-bag-category="men" aria-label="Men's Bags">
+                    <img src="web photo/bags/mens-bag-category.png" alt="Men's Bags"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="bag-category-fallback" style="display:none;"><i class="fas fa-briefcase"></i></div>
+                    <span class="bag-category-label">Men</span>
+                </button>
+                <button type="button" class="bag-category-tile" data-bag-category="women" aria-label="Women's Bags">
+                    <img src="web photo/bags/womens-bag-category.png" alt="Women's Bags"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="bag-category-fallback" style="display:none;"><i class="fas fa-shopping-bag"></i></div>
+                    <span class="bag-category-label">Women</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="bag-modal-view bag-view-items" id="bagViewItems">
+            <button type="button" class="bag-back-btn" id="bagBackBtn">
+                <i class="fas fa-arrow-left"></i> Back to categories
+            </button>
+            <div class="bag-items-header">
+                <i class="fas" id="bagItemsIcon"></i>
+                <div>
+                    <h2 id="bagItemsTitle"></h2>
+                    <p id="bagItemsSub"></p>
+                </div>
+            </div>
+            <div class="bag-items-grid" id="bagItemsGrid"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Discount Showcase -->
+    <section class="discount-showcase" id="discount-showcase">
+        <div class="section-header">
+            <h2>New Discounts</h2>
+            <p>The more you shop, the more you save</p>
+        </div>
+        <div class="discount-showcase-grid">
+            <div class="discount-showcase-item">
+                <img src="web photo/discount-5000.png" alt="10% off orders over LKR 5,000"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="discount-showcase-fallback"><i class="fas fa-percent"></i></div>
+                <span class="discount-showcase-caption">10% Off — Orders over LKR 5,000</span>
+            </div>
+            <div class="discount-showcase-item">
+                <img src="web photo/discount-10000.png" alt="20% off orders over LKR 10,000"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="discount-showcase-fallback"><i class="fas fa-percent"></i></div>
+                <span class="discount-showcase-caption">20% Off — Orders over LKR 10,000</span>
+            </div>
+            <div class="discount-showcase-item">
+                <img src="web photo/discount-evoucher.png" alt="Extra 5% off when paying with an e-Voucher"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="discount-showcase-fallback"><i class="fas fa-gift"></i></div>
+                <span class="discount-showcase-caption">+5% Extra — With any e-Voucher</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout -->
+    <div class="checkout-overlay" id="checkoutOverlay">
+
+    <div class="checkout-form-state" id="checkoutFormState">
+        <div class="checkout-topbar">
+            <span class="checkout-logo">Mrs Fashion</span>
+            <div class="checkout-topbar-right">
+                <button class="checkout-cart-icon" id="checkoutCartIcon" aria-label="Cart" title="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                </button>
+                <button class="checkout-close" id="checkoutClose" aria-label="Close checkout">&times;</button>
+            </div>
+        </div>
+
+        <div class="checkout-body">
+
+            <div class="checkout-form-col">
+                <form class="checkout-form-inner" id="checkoutForm" novalidate>
+
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">Contact</div>
+                        <input class="checkout-field" type="text" id="checkoutEmail" placeholder="Email or mobile phone number" required>
+                        <label class="checkout-check">
+                            <input type="checkbox" id="checkoutNewsOptIn">
+                            Email me with news and offers
+                        </label>
+                    </div>
+
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">Delivery</div>
+                        <div class="checkout-toggle" id="checkoutDeliveryToggle">
+                            <button type="button" class="checkout-toggle-btn active" data-mode="ship">
+                                <i class="fas fa-box"></i> Ship
+                            </button>
+                            <button type="button" class="checkout-toggle-btn" data-mode="pickup">
+                                <i class="fas fa-map-marker-alt"></i> Pickup
+                            </button>
+                        </div>
+
+                        <div class="checkout-stack" id="checkoutShipFields">
+                            <input class="checkout-field" type="text" value="Sri Lanka" disabled>
+                            <div class="checkout-row">
+                                <input class="checkout-field" type="text" id="checkoutFirstName" placeholder="First name (optional)">
+                                <input class="checkout-field" type="text" id="checkoutLastName" placeholder="Last name" required>
+                            </div>
+                            <input class="checkout-field" type="text" id="checkoutAddress" placeholder="Address" required>
+                            <input class="checkout-field" type="text" id="checkoutApartment" placeholder="Apartment, suite, etc. (optional)">
+                            <div class="checkout-row">
+                                <input class="checkout-field" type="text" id="checkoutCity" placeholder="City" required>
+                                <input class="checkout-field" type="text" id="checkoutPostal" placeholder="Postal code (optional)">
+                            </div>
+                            <input class="checkout-field" type="tel" id="checkoutPhone" placeholder="Phone" required>
+                            <label class="checkout-check">
+                                <input type="checkbox" id="checkoutSaveInfo">
+                                Save this information for next time
+                            </label>
+                        </div>
+
+                        <div class="checkout-pickup-note" id="checkoutPickupNote">
+                            <strong>Mrs Fashion — Colombo Flagship Store</strong><br>
+                            No. 42, Galle Road, Colombo 03, Sri Lanka<br>
+                            Ready for pickup within 24 hours. We'll text you when it's ready.
+                        </div>
+                    </div>
+
+                    <div class="checkout-section" id="checkoutShippingSection">
+                        <div class="checkout-section-title">Shipping method</div>
+                        <div class="checkout-shipping-box" id="checkoutShippingPlaceholder">
+                            Enter your shipping address to view available shipping methods.
+                        </div>
+                        <div class="checkout-shipping-options" id="checkoutShippingOptions">
+                            <label class="checkout-shipping-option selected" data-fee="500">
+                                <span class="checkout-shipping-option-left">
+                                    <input type="radio" name="checkoutShipping" checked>
+                                    <span>
+                                        <span class="checkout-shipping-option-name">Standard Delivery</span><br>
+                                        <span class="checkout-shipping-option-eta">3–5 business days</span>
+                                    </span>
+                                </span>
+                                <span class="checkout-shipping-option-price">LKR 500</span>
+                            </label>
+                            <label class="checkout-shipping-option" data-fee="1200">
+                                <span class="checkout-shipping-option-left">
+                                    <input type="radio" name="checkoutShipping">
+                                    <span>
+                                        <span class="checkout-shipping-option-name">Express Delivery</span><br>
+                                        <span class="checkout-shipping-option-eta">1–2 business days</span>
+                                    </span>
+                                </span>
+                                <span class="checkout-shipping-option-price">LKR 1,200</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">Payment</div>
+                        <p class="checkout-pay-note">All transactions are secure and encrypted.</p>
+
+                        <div class="checkout-pay-list" id="checkoutPayList">
+                            <label class="checkout-pay-option selected" id="checkoutPayKokoOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="koko" checked>
+                                    Koko: Buy Now Pay Later
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="44" height="24" src="icon pack/koko.avif" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                You'll be redirected to Koko: Buy Now Pay Later to complete your purchase.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutKokoDetails">
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="tel" id="checkoutKokoMobile" placeholder="Registered mobile number" autocomplete="tel">
+                                </div>
+                            </div>
+
+                            <label class="checkout-pay-option" id="checkoutPayEwalletOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="ewallet">
+                                    E-Wallet
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <i class="fas fa-wallet checkout-ewallet-icon"></i>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                Pay instantly using your E-Wallet balance.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutEwalletDetails">
+                                <div class="checkout-ewallet-balance-row">
+                                    <span>Available balance</span>
+                                    <span id="checkoutEwalletBalance">LKR 0.00</span>
+                                </div>
+                                <div class="checkout-ewallet-msg" id="checkoutEwalletMsg"></div>
+                            </div>
+
+                            <label class="checkout-pay-option" id="checkoutPayBinanceOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="binance">
+                                    Binance
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="24" height="24" src="icon pack/icons8-binance-64.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                Enter your Binance Pay details below to complete your purchase securely.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutBinanceDetails">
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutBinanceId" placeholder="Binance Pay ID or email" autocomplete="off">
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutBinanceWallet" placeholder="Wallet address (optional)" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <label class="checkout-pay-option" id="checkoutPayBybitOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="bybit">
+                                    Bybit
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="54" height="24" src="icon pack/Bybit-logo_(cropped).png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                Enter your Bybit details below to complete your purchase securely.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutBybitDetails">
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutBybitId" placeholder="Bybit UID or email" autocomplete="off">
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutBybitWallet" placeholder="Wallet address (optional)" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <label class="checkout-pay-option" id="checkoutPayPaypalOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="paypal">
+                                    Paypal
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="24" height="24" src="icon pack/icons8-paypal-48.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                Enter your PayPal email below to complete your purchase securely.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutPaypalDetails">
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="email" id="checkoutPaypalEmail" placeholder="PayPal email address" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <label class="checkout-pay-option selected" id="checkoutPayCardOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="card" checked>
+                                    Credit / Debit Card (visa,mastercard,amex)
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="24" height="24" src="icon pack/icons8-visa-48.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                    <img width="24" height="24" src="icon pack/icons8-mastercard-50.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                    <img width="24" height="24" src="icon pack/icons8-amex--pound-50.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail">
+                                Enter your card details below to complete your purchase securely.
+                            </div>
+                            <div class="checkout-card-details" id="checkoutCardDetails">
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutCardName" placeholder="Name on card" autocomplete="cc-name">
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutCardNumber" placeholder="Card number" inputmode="numeric" maxlength="19" autocomplete="cc-number">
+                                </div>
+                                <div class="checkout-row">
+                                    <input class="checkout-field" type="text" id="checkoutCardExpiry" placeholder="MM / YY" inputmode="numeric" maxlength="7" autocomplete="cc-exp">
+                                    <input class="checkout-field" type="text" id="checkoutCardCvv" placeholder="CVV" inputmode="numeric" maxlength="4" autocomplete="cc-csc">
+                                </div>
+                            </div>
+
+                            <label class="checkout-pay-option" id="checkoutPayCodOption">
+                                <span class="checkout-pay-option-left">
+                                    <input type="radio" name="checkoutPayment" value="cod">
+                                    Cash on Delivery (COD)
+                                </span>
+                                <span class="checkout-pay-icons">
+                                    <img width="24" height="24" src="icon pack/icons8-cash-on-delivery-64.png" alt="external-Binance-cryptocurrency-black-fill-lafs"/>
+                                </span>
+                            </label>
+                            <div class="checkout-pay-detail" id="checkoutPayCodDetail">
+                                Pay in cash when your order arrives.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-section">
+                        <div class="checkout-section-title">Billing address</div>
+                        <div class="checkout-billing-list" id="checkoutBillingList">
+                            <label class="checkout-billing-option selected">
+                                <input type="radio" name="checkoutBilling" value="same" checked>
+                                Same as shipping address
+                            </label>
+                            <label class="checkout-billing-option">
+                                <input type="radio" name="checkoutBilling" value="different">
+                                Use a different billing address
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="checkout-pay-btn" id="checkoutPayBtn">Pay now</button>
+
+                    <div class="checkout-legal">
+                        <a href="#">Refund policy</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms of service</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="checkout-summary-col">
+                <div class="checkout-summary-scroll" id="checkoutSummaryItems">
+                </div>
+                <div class="checkout-summary-totals">
+                    <div class="checkout-discount-row">
+                        <input type="text" id="checkoutDiscountCode" placeholder="Discount code">
+                        <button type="button" id="checkoutDiscountApply">Apply</button>
+                    </div>
+                    <p class="checkout-discount-msg" id="checkoutDiscountMsg"></p>
+
+                    <div class="checkout-total-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">LKR 0</span>
+                    </div>
+                    <div class="checkout-total-row discount" id="checkoutDiscountRow" style="display:none;">
+                        <span id="checkoutDiscountLabel">Discount</span>
+                        <span id="checkoutDiscountAmount">- LKR 0</span>
+                    </div>
+                    <div class="checkout-total-row">
+                        <span>Shipping</span>
+                        <span id="checkoutShippingFee">Enter shipping address</span>
+                    </div>
+                    <div class="checkout-total-row grand">
+                        <span>Total</span>
+                        <span id="checkoutGrandTotal">LKR 0</span>
+                    </div>
+                    <p class="checkout-total-currency-note">LKR — Sri Lankan Rupee</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-confirm" id="checkoutConfirm">
+        <div class="checkout-confirm-icon"><i class="fas fa-check"></i></div>
+        <h2>Order confirmed</h2>
+        <p>Thank you for shopping with Mrs Fashion — a confirmation has been sent to your email. We'll notify you as soon as your order ships.</p>
+        <div class="checkout-confirm-order" id="checkoutConfirmOrderId">Order #MF00000</div>
+        <button type="button" class="checkout-pay-btn" style="max-width:280px;" id="checkoutConfirmDone">Continue Shopping</button>
+    </div>
+</div>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner-5">
+    <div class="ad-banner-card" id="adBannerCard5">
+        <button class="ad-banner-dismiss" id="adBannerDismiss5" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia5">
+
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 10.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 11.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 12.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+                <span>Add a 1600×320 image here</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Ticket Booking -->
+    <button class="ticket-booking-btn" id="ticketBookingBtn" aria-label="Book Concert Tickets">
+        <img src="icon pack/ticket.gif" alt="Ticket" class="ticket-icon-gif" draggable="false" width="28" height="28" style="margin-right:8px;vertical-align:middle;" aria-hidden="true">
+        <span>Book Tickets</span>
+    </button>
+
+<div class="ticket-modal" id="ticketModal">
+    <div class="ticket-modal-content">
+        <button type="button" class="ticket-modal-close" id="ticketModalClose" aria-label="Close">&times;</button>
+
+        <div class="ticket-poster-panel" id="ticketPosterPanel">
+            <div class="ticket-poster-fallback"><i class="fas fa-music"></i></div>
+            <div class="ticket-poster-dots" id="ticketPosterDots"></div>
+        </div>
+
+        <div class="ticket-booking-section">
+            <div class="ticket-modal-header">
+                <i class="fas fa-ticket-alt"></i>
+                <h2>Book Concert Tickets</h2>
+            </div>
+            <p class="ticket-modal-sub">Choose your event, pick a date, and reserve your seats.</p>
+
+            <form id="ticketBookingForm" novalidate>
+                <div class="ticket-field">
+                    <label for="ticketEvent">Event</label>
+                    <select id="ticketEvent" required>
+                        <option value="" disabled selected>Select an event</option>
+                    </select>
+                </div>
+
+                <div class="ticket-field-row">
+                    <div class="ticket-field">
+                        <label for="ticketDate">Date</label>
+                        <select id="ticketDate" required disabled>
+                            <option value="" disabled selected>Select event first</option>
+                        </select>
+                    </div>
+                    <div class="ticket-field">
+                        <label for="ticketType">Ticket Type</label>
+                        <select id="ticketType" required disabled>
+                            <option value="" disabled selected>Select event first</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ticket-field">
+                    <label>Quantity</label>
+                    <div class="ticket-qty-control">
+                        <button type="button" class="ticket-qty-btn" data-dir="-1" aria-label="Decrease quantity">−</button>
+                        <span class="ticket-qty-value" id="ticketQtyValue">1</span>
+                        <button type="button" class="ticket-qty-btn" data-dir="1" aria-label="Increase quantity">+</button>
+                    </div>
+                </div>
+
+                <div class="ticket-field-row">
+                    <div class="ticket-field">
+                        <label for="ticketName">Full Name</label>
+                        <input type="text" id="ticketName" placeholder="Your name" required autocomplete="off">
+                    </div>
+                    <div class="ticket-field">
+                        <label for="ticketEmail">Email</label>
+                        <input type="email" id="ticketEmail" placeholder="you@example.com" required autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="ticket-price-summary">
+                    <span>Total</span>
+                    <span id="ticketTotalPrice">LKR 0</span>
+                </div>
+            <button type="submit" class="ticket-submit-btn">Pay Now</button>
+            <p class="ticket-modal-note">You'll go straight to checkout.</p>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Fullscreen Video & Features -->
+    <section id="fullscreenVideoWrapper" class="fullscreen-video-wrapper" aria-label="Full screen video">
+        <video id="fullscreenVideo" class="fullscreen-video" autoplay muted loop playsinline disablePictureInPicture>
+            <source src="web photo/fullscreen-clip.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <section class="features">
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\transit.png"></i></div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable shipping across Sri Lanka</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\cash-on-delivery.png"></i></div>
+                <h3>Cash On Delivery</h3>
+                <p>Payment Upon Receipt Of GOods For Customer Convenience</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\secure-payment.png"></i></div>
+                <h3>Secure Payment</h3>
+                <p>100% secure transactions with SSL encryption</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\return.png"></i></div>
+                <h3>Easy Returns</h3>
+                <p>Hassle-free returns within 30 days</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\online-support.png"></i></div>
+                <h3>24/7 Support</h3>
+                <p>Customer support available anytime</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\vip3.png"></div>
+                <h3>Vip service</h3>
+                <p>Exclusive perks, early access to drops, and priority support for our VIP members.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\discount.png"></div>
+                <h3>Discount</h3>
+                <p>Seasonal sales and members-only pricing on your favourite styles.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><img src="icon pack\warranty.png"></div>
+                <h3>warranty</h3>
+                <p>Shop with confidence — every purchase is backed by our product warranty.</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Ad Banner -->
+    <section class="ad-banner-section" id="ad-banner-6">
+    <div class="ad-banner-card" id="adBannerCard6">
+        <button class="ad-banner-dismiss" id="adBannerDismiss6" aria-label="Dismiss ad">&times;</button>
+
+        <div class="ad-banner-media" id="adBannerMedia6">
+
+            <img
+                class="ad-banner-media-img is-active"
+                src="web photo/ad banner/ad banner 13.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 14.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 15.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <img
+                class="ad-banner-media-img"
+                src="web photo/ad banner/ad banner 16.png"
+                alt="Advertisement"
+                loading="lazy"
+                onerror="handleAdImageError(this);">
+
+            <div class="ad-banner-media-fallback">
+                <i class="fas fa-image"></i>
+                <span>Add a 1600×320 image here</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- About -->
+    <div class="about-video-wrapper">
+    <video id="aboutVideo" class="about-video-bg"
+       autoplay muted loop playsinline preload="auto"
+       disablePictureInPicture disableRemotePlayback
+       controlsList="nodownload noplaybackrate nofullscreen"
+       tabindex="-1" aria-hidden="true">
+    <source src="web photo/Brand Showcase Video.mp4" type="video/mp4">
+    </video>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Mrs Fashion</h2>
+            <p>Mrs Fashion is your ultimate destination for premium fashion in Sri Lanka. We bring you the latest trends, timeless classics, and exclusive designs curated specifically for the Sri Lankan fashion enthusiast.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="10"  data-suffix="K+">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500" data-suffix="+">0</div>
+                    <div class="stat-label">Products</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99"  data-suffix="%">0</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Our Bands -->
+    <section class="our-bands" id="bands">
+    <div class="bands-header">
+        <h2>Our Bands</h2>
+    </div>
+    <div class="marquee-track">
+        <div class="marquee-inner">
+            <div class="band-item">
+                <img src="band/1.png" alt="Band Name 1">
+            </div>
+            <div class="band-item">
+                <img src="band/2.png" alt="Band Name 2">
+            </div>
+            <div class="band-item">
+                <img src="band/3.png" alt="Band Name 3">
+            </div>
+            <div class="band-item">
+                <img src="band/4.png" alt="Band Name 4">
+            </div>
+            <div class="band-item">
+                <img src="band/5.png" alt="Band Name 5">
+            </div>
+            <div class="band-item">
+                <img src="band/6.png" alt="Band Name 6">
+            </div>
+            <div class="band-item">
+                <img src="band/7.png" alt="Band Name 7">
+            </div>
+            <div class="band-item">
+                <img src="band/8.png" alt="Band Name 8">
+            </div>
+            <div class="band-item">
+                <img src="band/9.png" alt="Band Name 9">
+            </div>
+            <div class="band-item">
+                <img src="band/10.png" alt="Band Name 10">
+            </div>
+            <div class="band-item">
+                <img src="band/11.png" alt="Band Name 11">
+            </div>
+            <div class="band-item">
+                <img src="band/12.png" alt="Band Name 12">
+            </div>
+            <div class="band-item">
+                <img src="band/13.png" alt="Band Name 13">
+            </div>
+            <div class="band-item">
+                <img src="band/14.png" alt="Band Name 14">
+            </div>
+            <div class="band-item">
+                <img src="band/15.png" alt="Band Name 15">
+            </div>
+            <div class="band-item">
+                <img src="band/16.png" alt="Band Name 16">
+            </div>
+            <div class="band-item">
+                <img src="band/17.png" alt="Band Name 17">
+            </div>
+            <div class="band-item">
+                <img src="band/18.png" alt="Band Name 18">
+            </div>
+            <div class="band-item">
+                <img src="band/19.png" alt="Band Name 19">
+            </div>
+            <div class="band-item">
+                <img src="band/20.png" alt="Band Name 20">
+            </div>
+            <div class="band-item">
+                <img src="band/21.png" alt="Band Name 21">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section class="video-showcase">
+        <div class="video-showcase-frame">
+            <video
+                id="showcaseVideo"
+                src="web photo/mrs-fashion-showcase.mp4"
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                disablePictureInPicture
+                controlsList="nodownload noplaybackrate">
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <video class="contact-video-bg" autoplay muted loop playsinline preload="metadata" disablePictureInPicture aria-hidden="true">
+            <source src="web photo/Pink_and_white_fabric_billowing_20260919175355.mp4" type="video/mp4">
+        </video>
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you</p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text"  placeholder="Your Name"    required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email"   required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5"  required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-hem"><span class="footer-hem-fill"></span></div>
+
+        <div class="footer-watermark" aria-hidden="true">MRS FASHION</div>
+
+        <div class="footer-grid footer-content">
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">Mrs Fashion</div>
+                <p class="footer-tagline">Your style, your story, your fashion — curated and dispatched from Sri Lanka.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com" class="footer-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" class="footer-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" class="footer-social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://web.whatsapp.com" class="footer-social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com" class="footer-social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#shop-categories">Men</a></li>
+                    <li><a href="#shop-categories">Women</a></li>
+                    <li><a href="#shop-categories">Kids</a></li>
+                    <li><a href="#Spin">Spin &amp; Win</a></li>
+                    <li><a href="#" data-open-credit>Store Credit</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-tag">
+                <div class="footer-tag">
+                    <span class="footer-tag-hole"></span>
+                    <h4 class="footer-tag-title">Get In The Loop</h4>
+                    <p class="footer-tag-sub">First look at drops &amp; discount codes. No spam, promise.</p>
+                    <form class="footer-tag-form" id="footerNewsletterForm">
+                        <input type="email" placeholder="Your email" required aria-label="Email address">
+                        <button type="submit">Join</button>
+                    </form>
+                    <p class="footer-tag-note">By joining you agree to receive occasional emails.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mrs Fashion. All rights reserved. · Proudly stitched in Sri Lanka</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <button class="footer-to-top" id="footerToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+<!-- AI Agent -->
+<div class="ai-agent-overlay" id="aiAgentModal">
+    <div class="ai-agent-panel" role="dialog" aria-modal="true" aria-labelledby="aiAgentTitle">
+
+        <aside class="ai-agent-rail" aria-hidden="true">
+            <span class="ai-agent-logo">
+                <img src="icon pack/ai-agent-logo.png" alt="MRS Fashion AI logo">
+            </span>
+            <button type="button" class="ai-agent-rail-btn is-active" disabled tabindex="-1"><i class="fas fa-pen-to-square"></i></button>
+            <button type="button" class="ai-agent-rail-btn" disabled tabindex="-1"><i class="fas fa-magnifying-glass"></i></button>
+            <div class="ai-agent-rail-spacer"></div>
+            <button type="button" class="ai-agent-rail-btn" disabled tabindex="-1"><i class="fas fa-gear"></i></button>
+            <span class="ai-agent-avatar"><img src="icon pack/user-48.png" alt="" onerror="this.style.display='none'"></span>
+        </aside>
+
+        <header class="ai-agent-topbar">
+            <h2 id="aiAgentTitle">MRS Fashion AI agent</h2>
+            <button type="button" class="ai-agent-close" id="aiAgentClose" aria-label="Close">&times;</button>
+        </header>
+
+        <main class="ai-agent-body">
+            <div class="ai-agent-soon" id="aiAgentSoon">Coming Soon</div>
+        </main>
+
+        <footer class="ai-agent-footer">
+            <div class="ai-agent-suggestions">
+                <button type="button" class="ai-agent-chip" disabled><i class="fas fa-shirt"></i> Find an outfit for a wedding</button>
+                <button type="button" class="ai-agent-chip" disabled><i class="fas fa-gift"></i> Suggest a gift under LKR 5,000</button>
+                <button type="button" class="ai-agent-chip" disabled><i class="fas fa-ruler"></i> Help me pick my size</button>
+            </div>
+
+            <div class="ai-agent-inputbar" aria-disabled="true">
+                <button type="button" class="ai-agent-plus" disabled aria-label="Add attachment">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <input type="text" class="ai-agent-input" placeholder="Ask MRS Fashion AI" disabled aria-label="Message input (unavailable)">
+                <span class="ai-agent-model">Fashion Pro <i class="fas fa-chevron-down"></i></span>
+                <button type="button" class="ai-agent-mic" disabled aria-label="Voice input"><i class="fas fa-microphone"></i></button>
+                <button type="button" class="ai-agent-send" disabled>Send</button>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
